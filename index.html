@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Surprise Page</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SCREEN 1 -->
+    <section class="screen active" id="s1">
+        <div class="card">
+
+            <div class="emoji">🎁</div>
+
+            <h1>Ready for a little surprise?</h1>
+
+            <p>Tap the button to continue.</p>
+
+            <button onclick="go(2)">YES</button>
+
+            <button class="alt" onclick="moveNo(this)">
+                NO
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 2 -->
+    <section class="screen" id="s2">
+        <div class="card">
+
+            <div class="emoji">✨</div>
+
+            <h1>Are you sure?</h1>
+
+            <p>This page has a few surprises waiting.</p>
+
+            <button onclick="go(3)">YES</button>
+
+            <button class="alt" onclick="moveNo(this)">
+                NO
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 3 -->
+    <section class="screen" id="s3">
+        <div class="card">
+
+            <div class="emoji">😄</div>
+
+            <h1>Okay, let's continue!</h1>
+
+            <p>You made it this far. Now explore the memories.</p>
+
+            <button onclick="go(4)">
+                CONTINUE
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 4 -->
+    <section class="screen" id="s4">
+        <div class="card">
+
+            <h1>📸 Capture Memories</h1>
+
+            <p>Replace these images with your own photos.</p>
+
+            <div class="gallery">
+
+                <img src="photo1.jpg" alt="Photo 1">
+
+                <img src="photo2.jpg" alt="Photo 2">
+
+                <img src="photo3.jpg" alt="Photo 3">
+
+                <img src="photo4.jpg" alt="Photo 4">
+
+            </div>
+
+            <button onclick="go(5)">
+                NEXT
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 5 -->
+    <section class="screen" id="s5">
+        <div class="card">
+
+            <h1>🎁 Pick a Gift</h1>
+
+            <p>Tap one of the boxes.</p>
+
+            <div class="gifts">
+
+                <div class="gift" onclick="gift(1)">
+                    🎁
+                </div>
+
+                <div class="gift" onclick="gift(2)">
+                    🎁
+                </div>
+
+                <div class="gift" onclick="gift(3)">
+                    🎁
+                </div>
+
+                <div class="gift" onclick="gift(4)">
+                    🎁
+                </div>
+
+            </div>
+
+            <div id="msg" class="message"></div>
+
+            <button class="small" onclick="go(6)">
+                FINISH
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 6 -->
+    <section class="screen" id="s6">
+        <div class="card">
+
+            <div class="emoji">🎉</div>
+
+            <h1>Thanks for visiting!</h1>
+
+            <p>
+                This page was made as a fun little surprise.
+            </p>
+
+            <button onclick="location.reload()">
+                PLAY AGAIN
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- Connect JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
